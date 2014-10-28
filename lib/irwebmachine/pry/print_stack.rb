@@ -38,5 +38,5 @@ private
   end
 end
 set = Pry::CommandSet.new
-set.commands["print-stack"] = IRWebmachine::Pry::PrintStack
+set["print-stack"] = IRWebmachine::Pry::PrintStack
 Pry.commands.import(set)

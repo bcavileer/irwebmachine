@@ -54,5 +54,5 @@ private
 end
 
 set = Pry::CommandSet.new
-set.commands["enter-stack"] = IRWebmachine::Pry::EnterStack
+set["enter-stack"] = IRWebmachine::Pry::EnterStack
 Pry.commands.import(set)
